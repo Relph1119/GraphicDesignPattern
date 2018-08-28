@@ -16,11 +16,10 @@ public class BookShelf implements Aggregate {
 	
 	public void appendBook(Book book) {
 		this.books.add(book);
-		last++;
 	}
 	
 	public int getLength() {
-		return last;
+		return books.size();
 	}
 	
 	@Override
