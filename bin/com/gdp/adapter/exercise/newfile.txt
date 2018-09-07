@@ -1,5 +1,0 @@
-#written by FileProperties
-#Mon Aug 27 13:27:33 CST 2018
-day=21
-year=2004
-month=4
