@@ -1,4 +1,4 @@
-package com.gdp.singleton.exercise.triple;
+package com.gdp.singleton.exercise2;
 
 public class Main {
 	public static void main(String[] args) {

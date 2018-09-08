@@ -1,4 +1,4 @@
-package com.gdp.singleton.exercise.triple;
+package com.gdp.singleton.exercise2;
 
 public class Triple {
 	private static Triple[] triple = new Triple[] {
