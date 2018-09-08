@@ -24,8 +24,12 @@ JDK版本：jdk1.7.0_79
 ### 第三章-Template Method（模版）模式 ###
 示例
 ![](https://i.imgur.com/a4RBk0q.png)
-
+### 第四章-Factory Method(工厂)模式 ###
+示例
+![](https://i.imgur.com/3vSxlja.png)
 ## 总结 ##
 1. Iterator模式：遍历与实现分离，遍历的时候不依赖实现
 2. Adapter模式：版本升级和兼容性，现有的类已经被测试过，创建一个新类来适配，只需要测试新类，如果出现了Bug，可以很容易的知道问题所在。
 3. Template Method模式：在父类中定义处理流程的框架，在子类中实现具体处理，避开使用instanceof指定子类。
+4. Factory Method模式：框架与具体加工分离。
+5. 

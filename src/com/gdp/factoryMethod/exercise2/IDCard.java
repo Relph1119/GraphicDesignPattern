@@ -1,4 +1,4 @@
-package com.gdp.factoryMethod.exercise;
+package com.gdp.factoryMethod.exercise2;
 
 import com.gdp.factoryMethod.framework.Product;
 

@@ -1,4 +1,4 @@
-package com.gdp.factoryMethod.exercise;
+package com.gdp.factoryMethod.exercise2;
 
 import java.util.HashMap;
 import java.util.Hashtable;
