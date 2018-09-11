@@ -1,5 +1,7 @@
 package com.gdp.abstractFactory;
 
+import java.util.Arrays;
+
 import com.gdp.abstractFactory.factory.Factory;
 import com.gdp.abstractFactory.factory.Link;
 import com.gdp.abstractFactory.factory.Page;
@@ -7,14 +9,32 @@ import com.gdp.abstractFactory.factory.Tray;
 
 public class Main {
 	public static void main(String[] args) {
-		if (args.length != 1) {
+		if (args.length < 1) {
 			System.out.println("Usage: java Main class.name.of.ConcreteFactory");
-			System.out.println("Example 1: java Main listfactory.ListFactory");
-			System.out.println("Example 2: java Main tablefactory.TableFactory");
+			System.out.println("Example 1: java Main com.gdp.abstractFactory.listfactory.ListFactory");
+			System.out.println("Example 2: java Main com.gdp.abstractFactory.tablefactory.TableFactory");
+			System.out.println("Example 3: java Main yahoo");
 			System.exit(0);
 		}
+		System.out.println("输入参数为：" + Arrays.asList(args).toString());
 		Factory factory = Factory.getFactory(args[0]);
-		
+		if(secondParamterEqualsYahoo(args)) {
+			createPageOnlyYahoo(factory);
+		} else {
+			createPage(factory);
+		}
+	}
+
+	public static boolean secondParamterEqualsYahoo(String[] args) {
+		return "yahoo".equals(args[1]);
+	}
+
+	public static void createPageOnlyYahoo(Factory factory) {
+		Page page = factory.createYahooPage();
+		page.output();
+	}
+
+	public static void createPage(Factory factory) {
 		Link people = factory.createLink("人民日报", "http://www.people.com.cn/");
 		Link gmw = factory.createLink("光明日报", "http://www.gmw.cn/");
 		
@@ -41,4 +61,5 @@ public class Main {
 		page.add(traysearch);
 		page.output();
 	}
+	
 }
