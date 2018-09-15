@@ -51,6 +51,15 @@ JDK版本：jdk1.7.0_79
 ![](https://i.imgur.com/LvNAC1U.png)
 习题8-2
 ![](https://i.imgur.com/74xRtxg.png)
+### 第九章-Bridge（桥接）模式 ###
+示例
+![](https://i.imgur.com/SsI28zo.png)
+习题9-1
+![](https://i.imgur.com/Yoj3NqL.png)
+习题9-2
+![](https://i.imgur.com/gfV2awX.png)
+习题9-3
+![](https://i.imgur.com/WAfS5c8.png)
 ## 总结 ##
 1. Iterator模式：遍历与实现分离，遍历的时候不依赖实现。
 2. Adapter模式：版本升级和兼容性，现有的类已经被测试过，创建一个新类来适配，只需要测试新类，如果出现了Bug，可以很容易的知道问题所在。
@@ -60,3 +69,4 @@ JDK版本：jdk1.7.0_79
 6. Prototype模式：根据实例（实例原型、实例模型）来生成新实例。
 7. Builder模式：可替换性，可以替换Builder组件类。
 8. Abstract Factory模式：易于增加具体工厂，难以增加新的零件。
+9. Bridge模式：将类的功能层次和实现层次分开。继承是强关联，委托是弱关联。
