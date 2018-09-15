@@ -60,6 +60,12 @@ JDK版本：jdk1.7.0_79
 ![](https://i.imgur.com/gfV2awX.png)
 习题9-3
 ![](https://i.imgur.com/WAfS5c8.png)
+### 第十章-Strategy（策略）模式 ###
+![](https://i.imgur.com/aojP8ZA.png)
+习题10-1
+![](https://i.imgur.com/pt1G8XV.png)
+习题10-4
+![](https://i.imgur.com/RrHLciB.png)
 ## 总结 ##
 1. Iterator模式：遍历与实现分离，遍历的时候不依赖实现。
 2. Adapter模式：版本升级和兼容性，现有的类已经被测试过，创建一个新类来适配，只需要测试新类，如果出现了Bug，可以很容易的知道问题所在。
@@ -70,3 +76,4 @@ JDK版本：jdk1.7.0_79
 7. Builder模式：可替换性，可以替换Builder组件类。
 8. Abstract Factory模式：易于增加具体工厂，难以增加新的零件。
 9. Bridge模式：将类的功能层次和实现层次分开。继承是强关联，委托是弱关联。
+10. Strategy模式：使用委托这种弱关联关系可以很方便地整体替换算法。
