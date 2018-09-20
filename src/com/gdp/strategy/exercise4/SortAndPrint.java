@@ -8,6 +8,7 @@ public class SortAndPrint {
 		this.sorter = sorter;
 	}
 	
+	@SuppressWarnings("unchecked")
 	public void execute() {
 		print();
 		sorter.sort(data);

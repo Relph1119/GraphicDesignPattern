@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class MultiStringDisplay extends Display {
 	
-	private ArrayList body = new ArrayList();
+	private ArrayList<String> body = new ArrayList<String>();
 	private int columns = 0;
 	
 	public void add(String msg) {

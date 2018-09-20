@@ -3,13 +3,14 @@ package com.gdp.visitor.exercise3;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-public class ElementArrayList extends ArrayList implements Element {
+public class ElementArrayList extends ArrayList<Element> implements Element {
+	private static final long serialVersionUID = 1L;
 
 	@Override
 	public void accept(Visitor visitor) {
-		Iterator it = iterator();
+		Iterator<Element> it = iterator();
 		while(it.hasNext()) {
-			Element e = (Element) it.next();
+			Element e = it.next();
 			e.accept(visitor);
 		}
 	}

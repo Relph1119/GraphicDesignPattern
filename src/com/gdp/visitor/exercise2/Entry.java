@@ -9,7 +9,7 @@ public abstract class Entry implements Element{
 		throw new FileTreatmentException();
 	}
 	
-	public Iterator iterator() throws FileTreatmentException {
+	public Iterator<Entry> iterator() throws FileTreatmentException {
 		throw new FileTreatmentException();
 	}
 	

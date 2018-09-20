@@ -1,7 +1,5 @@
 package com.gdp.builder.exercise3;
 
-import java.nio.Buffer;
-
 public class TextBuilder extends Builder {
 	
 	private StringBuffer buffer = new StringBuffer();

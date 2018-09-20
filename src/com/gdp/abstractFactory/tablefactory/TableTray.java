@@ -19,9 +19,9 @@ public class TableTray extends Tray {
 		buffer.append("<td bgcolor=\"#cccccc\" align=\"center\" colspan=\"" + tray.size() + "\"><b>" + caption + "</b></td>");
 		buffer.append("<tr>\n");
 		buffer.append("<tr>\n");
-		Iterator it = tray.iterator();
+		Iterator<Item> it = tray.iterator();
 		while (it.hasNext()) {
-			Item item = (Item) it.next();
+			Item item = it.next();
 			buffer.append(item.makeHTML());
 		}
 		buffer.append("</tr></table>");

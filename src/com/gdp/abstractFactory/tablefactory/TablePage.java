@@ -18,9 +18,9 @@ public class TablePage extends Page {
 		buffer.append("<body>\n");
 		buffer.append("<h1>" + title + "</h1>\n");
 		buffer.append("<table width=\"80%\" horder=\"3\">\n");
-		Iterator it = content.iterator();
+		Iterator<Item> it = content.iterator();
 		while (it.hasNext()) {
-			Item item = (Item) it.next();
+			Item item = it.next();
 			buffer.append("<tr>" + item.makeHTML() + "</tr>");
 		}
 		buffer.append("</table>\n");

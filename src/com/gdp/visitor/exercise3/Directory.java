@@ -5,7 +5,7 @@ import java.util.Iterator;
 
 public class Directory extends Entry {
 	private String name;
-	private ArrayList directory = new ArrayList();
+	private ArrayList<Entry> directory = new ArrayList<>();
 	
 	public Directory(String name) {
 		this.name = name;
@@ -19,9 +19,9 @@ public class Directory extends Entry {
 	@Override
 	public int getSize() {
 		int size = 0;
-		Iterator it = directory.iterator();
+		Iterator<Entry> it = directory.iterator();
 		while(it.hasNext()) {
-			Entry entry = (Entry) it.next();
+			Entry entry = it.next();
 			size += entry.getSize();
 		}
 		return size;
@@ -32,7 +32,7 @@ public class Directory extends Entry {
 		return this;
 	}
 	
-	public Iterator iterator() {
+	public Iterator<Entry> iterator() {
 		return directory.iterator();
 	}
 

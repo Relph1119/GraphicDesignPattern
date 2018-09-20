@@ -17,9 +17,9 @@ public class ListTray extends Tray {
 		buffer.append("<li>\n");
 		buffer.append(caption + "\n");
 		buffer.append("<ul>\n");
-		Iterator it = tray.iterator();
+		Iterator<Item> it = tray.iterator();
 		while (it.hasNext()) {
-			Item item = (Item)it.next();
+			Item item = it.next();
 			buffer.append(item.makeHTML());
 		}
 		buffer.append("</ul>\n");

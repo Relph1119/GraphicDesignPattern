@@ -3,18 +3,16 @@ package com.gdp.visitor.exercise1;
 import java.util.ArrayList;
 import java.util.Iterator;
 
-import com.sun.org.apache.xml.internal.security.keys.keyresolver.implementations.EncryptedKeyResolver;
-
 public class FileFindVisitor extends Visitor {
 	
 	private String fileType;
-	private ArrayList found = new ArrayList();
+	private ArrayList<Entry> found = new ArrayList<>();
 	
 	public FileFindVisitor(String fileType) {
 		this.fileType = fileType;
 	}
 
-	public Iterator getFoundFiles() {
+	public Iterator<Entry> getFoundFiles() {
 		return found.iterator();
 	}
 	
@@ -27,9 +25,9 @@ public class FileFindVisitor extends Visitor {
 
 	@Override
 	public void visit(Directory directory) {
-		Iterator it = directory.iterator();
+		Iterator<Entry> it = directory.iterator();
 		while(it.hasNext()) {
-			Entry entry = (Entry) it.next();
+			Entry entry = it.next();
 			entry.accept(this);
 		}
 	}

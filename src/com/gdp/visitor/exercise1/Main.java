@@ -33,7 +33,7 @@ public class Main {
 			rootdir.accept(ffv);
 			
 			System.out.println("HTML files are:");
-			Iterator it = ffv.getFoundFiles();
+			Iterator<Entry> it = ffv.getFoundFiles();
 			while(it.hasNext()) {
 				File file = (File) it.next();
 				System.out.println(file.toString());

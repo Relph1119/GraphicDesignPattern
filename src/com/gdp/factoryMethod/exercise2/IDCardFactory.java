@@ -1,13 +1,11 @@
 package com.gdp.factoryMethod.exercise2;
 
 import java.util.HashMap;
-import java.util.Hashtable;
-
 import com.gdp.factoryMethod.framework.Factory;
 import com.gdp.factoryMethod.framework.Product;
 
 public class IDCardFactory extends Factory {
-	private HashMap database = new HashMap<>();
+	private HashMap<Integer, String> database = new HashMap<>();
 	private int serial = 100;
 	
 	
@@ -22,7 +20,7 @@ public class IDCardFactory extends Factory {
 		database.put(new Integer(card.getSerial()), card.getOwner());
 	}
 
-	public HashMap getDatabase() {
+	public HashMap<Integer, String> getDatabase() {
 		return database;
 	}
 	

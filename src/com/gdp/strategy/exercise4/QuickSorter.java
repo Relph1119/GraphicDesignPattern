@@ -12,7 +12,7 @@ public class QuickSorter implements Sorter {
 	private void qsort(int pre, int post) {
 		int saved_pre = pre;
 		int saved_post = post;
-		Comparable mid = data[(pre + post) / 2];
+		Comparable<Object> mid = data[(pre + post) / 2];
 		do {
 			while (data[pre].compareTo(mid) < 0) {
 				pre++;
@@ -21,7 +21,7 @@ public class QuickSorter implements Sorter {
 				post--;
 			}
 			if (pre <= post) {
-				Comparable tmp = data[pre];
+				Comparable<Object> tmp = data[pre];
 				data[pre] = data[post];
 				data[post] = tmp;
 				pre++;
